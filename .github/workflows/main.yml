@@ -25,4 +25,4 @@ jobs:
 
       - name: Run decryption and compare script
         run: |
-          cd files && python decrypt.py
+          python files/decrypt.py
