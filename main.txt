@@ -1,7 +1,7 @@
 trojan://c97cf46e-1554-36cb-8b36-c3556b883dc4@de1a-xded888.godns.cyou:443?security=tls&type=ws&path=%2F92024db4-eadf-4cd1-b7e5-87d047d353f0#de1a
 trojan://c97cf46e-1554-36cb-8b36-c3556b883dc4@fr1a.godns.cyou:443?security=tls&type=ws&path=%2F92024db4-eadf-4cd1-b7e5-87d047d353f0#fr1a
-trojan://c97cf46e-1554-36cb-8b36-c3556b883dc4@ru1a20240615.godns.cyou:443?security=tls&type=ws&path=%2F92024db4-eadf-4cd1-b7e5-87d047d353f0#ru1a
-trojan://c97cf46e-1554-36cb-8b36-c3556b883dc4@ru2a20240615.godns.cyou:443?security=tls&type=ws&path=%2F92024db4-eadf-4cd1-b7e5-87d047d353f0#ru2a
+trojan://c97cf46e-1554-36cb-8b36-c3556b883dc4@202408-ru1a.godns.cyou:443?security=tls&type=ws&path=%2F92024db4-eadf-4cd1-b7e5-87d047d353f0#ru1a
+trojan://c97cf46e-1554-36cb-8b36-c3556b883dc4@202408-ru2a.godns.cyou:443?security=tls&type=ws&path=%2F92024db4-eadf-4cd1-b7e5-87d047d353f0#ru2a
 trojan://c97cf46e-1554-36cb-8b36-c3556b883dc4@2024-us2a.godns.cyou:443?security=tls&type=ws&path=%2F92024db4-eadf-4cd1-b7e5-87d047d353f0#us2a
 trojan://c97cf46e-1554-36cb-8b36-c3556b883dc4@2024-us3a.godns.cyou:443?security=tls&type=ws&path=%2F92024db4-eadf-4cd1-b7e5-87d047d353f0#us3a
 trojan://c97cf46e-1554-36cb-8b36-c3556b883dc4@2024-us4a.godns.cyou:443?security=tls&type=ws&path=%2F92024db4-eadf-4cd1-b7e5-87d047d353f0#us4a
