@@ -29,7 +29,6 @@ jobs:
           # Python script for decryption
           echo '
 from Crypto.Cipher import AES
-from base64 import b64decode
 
 key = b"36KeAARKZuKF39N9LFyycLUyKMhZDq0B"
 iv = b"36KeAARKZuKF39N9"
