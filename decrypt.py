@@ -1,12 +1,16 @@
 from Crypto.Cipher import AES
+from base64 import b64decode
 
 # 密钥和 IV
 key = b"36KeAARKZuKF39N9LFyycLUyKMhZDq0B"
 iv = b"36KeAARKZuKF39N9"
 
-# 打开加密文件
-with open("vsp-cn.py", "rb") as f:
-    encrypted_data = f.read()
+# 打开 Base64 编码的加密文件
+with open("vsp-cn.py", "r") as f:
+    encrypted_base64_data = f.read()
+
+# 先解码 Base64
+encrypted_data = b64decode(encrypted_base64_data)
 
 # 创建 AES 解密器
 cipher = AES.new(key, AES.MODE_CBC, iv)
