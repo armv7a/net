@@ -1,0 +1,76 @@
+name: Decrypt and Compare
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  decrypt-and-compare:
+    runs-on: ubuntu-latest
+    steps:
+      # Step 1: Checkout repository
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      # Step 2: Download the file
+      - name: Download vsp-cn.py
+        run: wget -O vsp-cn.py https://gitlab.com/bobmolen/cloud/raw/master/vsp-cn.py
+
+      # Step 3: Decrypt the file
+      - name: Decrypt vsp-cn.py
+        run: |
+          # Install Python and dependencies
+          sudo apt-get update
+          sudo apt-get install -y python3 python3-pip
+          pip3 install pycryptodome
+          
+          # Python script for decryption
+          echo '
+from Crypto.Cipher import AES
+from base64 import b64decode
+
+key = b"36KeAARKZuKF39N9LFyycLUyKMhZDq0B"
+iv = b"36KeAARKZuKF39N9"
+with open("vsp-cn.py", "rb") as f:
+    encrypted_data = f.read()
+cipher = AES.new(key, AES.MODE_CBC, iv)
+decrypted_data = cipher.decrypt(encrypted_data)
+
+# Remove PKCS5 padding
+pad_len = decrypted_data[-1]
+decrypted_data = decrypted_data[:-pad_len]
+
+# Save the decrypted content
+with open("main.txt", "wb") as f:
+    f.write(decrypted_data)
+' > decrypt.py
+          python3 decrypt.py
+
+      # Step 4: Compare and Replace
+      - name: Compare and Replace
+        id: compare-files
+        run: |
+          if cmp -s main.txt tmp_main.txt; then
+            echo "Files are identical."
+            echo "skip-update=true" >> $GITHUB_ENV
+          else
+            echo "Files differ. Replacing tmp_main.txt with main.txt."
+            cp main.txt tmp_main.txt
+            echo "skip-update=false" >> $GITHUB_ENV
+          fi
+
+      # Step 5: Remove the downloaded file
+      - name: Cleanup
+        run: rm vsp-cn.py
+
+      # Step 6: Commit and push changes (only if files differ)
+      - name: Commit and push changes
+        if: env.skip-update == 'false'
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add main.txt tmp_main.txt
+          git commit -m "Update main.txt and tmp_main.txt"
+          git push
