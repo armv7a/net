@@ -1,7 +1,7 @@
-trojan://c97cf46e-1554-36cb-8b36-c3556b883dc4@de1a-xded888.88888806.xyz:443?security=tls&type=ws&path=%2F92024db4-eadf-4cd1-b7e5-87d047d353f0#de1a
-trojan://c97cf46e-1554-36cb-8b36-c3556b883dc4@fr1a.88888806.xyz:443?security=tls&type=ws&path=%2F92024db4-eadf-4cd1-b7e5-87d047d353f0#fr1a
-trojan://c97cf46e-1554-36cb-8b36-c3556b883dc4@fr2a.88888806.xyz:443?security=tls&type=ws&path=%2F92024db4-eadf-4cd1-b7e5-87d047d353f0#fr2a
 vmess://ew0KICAidiI6ICIyIiwNCiAgInBzIjogInJ1MWEiLA0KICAiYWRkIjogIjQ2LjE3LjQwLjQ3IiwNCiAgInBvcnQiOiAiMjIwMTUiLA0KICAiaWQiOiAiYzk3Y2Y0NmUtMTU1NC0zNmNiLThiMzYtYzM1NTZiODgzZGM0IiwNCiAgImFpZCI6ICIwIiwNCiAgInNjeSI6ICJhdXRvIiwNCiAgIm5ldCI6ICJodHRwdXBncmFkZSIsDQogICJ0eXBlIjogIm5vbmUiLA0KICAiaG9zdCI6ICIiLA0KICAicGF0aCI6ICIvbWFjb3MiLA0KICAidGxzIjogIiIsDQogICJzbmkiOiAiIiwNCiAgImFscG4iOiAiIiwNCiAgImZwIjogIiINCn0=
+trojan://c97cf46e-1554-36cb-8b36-c3556b883dc4@de1a-xded888.88888806.xyz:443?security=tls&type=ws&path=%2F92024db4-eadf-4cd1-b7e5-87d047d353f0#de1a
+trojan://c97cf46e-1554-36cb-8b36-c3556b883dc4@fr1a.88888806.xyz:443?security=tls&type=ws&path=%2F3f741a9f-3c66-4102-838c-c77524d32d85#fr1a
+trojan://c97cf46e-1554-36cb-8b36-c3556b883dc4@fr2a.88888806.xyz:443?security=tls&type=ws&path=%2F3f741a9f-3c66-4102-838c-c77524d32d85#fr2a
 vmess://ew0KICAidiI6ICIyIiwNCiAgInBzIjogInJ1MmEiLA0KICAiYWRkIjogIjQ1LjE0Ny4yMDAuNzEiLA0KICAicG9ydCI6ICIyODA2NSIsDQogICJpZCI6ICJjOTdjZjQ2ZS0xNTU0LTM2Y2ItOGIzNi1jMzU1NmI4ODNkYzQiLA0KICAiYWlkIjogIjAiLA0KICAic2N5IjogImF1dG8iLA0KICAibmV0IjogImh0dHB1cGdyYWRlIiwNCiAgInR5cGUiOiAibm9uZSIsDQogICJob3N0IjogIiIsDQogICJwYXRoIjogIi9tYWNvcyIsDQogICJ0bHMiOiAiIiwNCiAgInNuaSI6ICIiLA0KICAiYWxwbiI6ICIiLA0KICAiZnAiOiAiIg0KfQ==
 trojan://c97cf46e-1554-36cb-8b36-c3556b883dc4@2024-us2a.88888806.xyz:443?security=tls&type=ws&path=%2F92024db4-eadf-4cd1-b7e5-87d047d353f0#us2a
 trojan://c97cf46e-1554-36cb-8b36-c3556b883dc4@2024-us3a.88888806.xyz:443?security=tls&type=ws&path=%2F92024db4-eadf-4cd1-b7e5-87d047d353f0#us3a
